@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" name="qualquernome" id="qualquernome" />
+      <input type="text" name="qualquernome2" id="qualquernome2" />
+      <button class="botao">Adicionar</button>
+    </div>
+
+    <script>
+      var teste = document.getElementById("qualquernome");
+      console.log(teste);
+
+      teste = document.getElementsByTagName("qualquernome");
+      console.log(teste);
+
+      teste = document.querySelector("div#app input");
+      console.log(teste);
+
+      teste = document.querySelector("input[name=qualquernome]");
+      console.log(teste);
+
+      teste = document.querySelector("input");
+      console.log(teste);
+
+      teste = document.querySelectorAll("input");
+      console.log(teste);
+
+      var btnElement = document.querySelector("button.");
+    </script>
+  </body>
+</html>

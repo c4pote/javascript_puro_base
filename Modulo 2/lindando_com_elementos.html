@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Curso Javascript</title>
+  </head>
+  <body>
+    <div id="app">
+      <input id="inputcoco" />
+    </div>
+
+    <script>
+      //Adicionando Atribyutos
+      var linkElement = document.createElement("a");
+      linkElement.setAttribute("href", "http://jati.com.br");
+      linkElement.setAttribute("title", "QUE BELEZA");
+      //Adicionando Componente
+      var textElement = document.createTextNode("Acessar Jatinox");
+      linkElement.appendChild(textElement);
+      var containerElement = document.querySelector("#app");
+      containerElement.appendChild(linkElement);
+      //Removendo Input
+      var inputElement = document.querySelector("#inputcoco");
+      containerElement.removeChild(inputElement);
+    </script>
+  </body>
+</html>
